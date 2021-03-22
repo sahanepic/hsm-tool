@@ -205,7 +205,7 @@ public class HsmCaller
                 request = ISOUtil.hex2byte("EE0201001111" + KIS + KTYPE + "000910" + eLMKKEY);
             }
             else {
-                request = ISOUtil.hex2byte("EE0201001212" + KIS + KTYPE + "001111" + eLMKKEY);
+                request = ISOUtil.hex2byte("EE0201001111" + KIS + KTYPE + "001111" + eLMKKEY);
             }
             final String hlen = Integer.toHexString(request.length);
             final String hd = "01010000" + ISOUtil.zeropad(hlen, 4);
